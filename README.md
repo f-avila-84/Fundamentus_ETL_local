@@ -67,7 +67,7 @@ Para executar o script, basta rodar o arquivo Python a partir do seu terminal:
 
 ```bash
 python seu_script_aqui.py
-
+```
 O script criará uma pasta data/ no mesmo diretório e salvará o arquivo CSV lá.
 
 
