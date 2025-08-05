@@ -79,7 +79,7 @@ O script criará uma pasta data/ no mesmo diretório e salvará o arquivo CSV l�
 O código é dividido em funções lógicas para facilitar a compreensão:
 
 * **normalize_string_for_comparison(s: str) -> str:** Função utilitária para limpar e padronizar strings, removendo acentos, caracteres especiais e espaços extras.
-* **clean_and_convert_value(value_str):** Converte strings de valores monetários ou percentuais para números de ponto flutuante.
+* **clean_and_convert_value(value_str) -> float:** Converte strings de valores monetários ou percentuais para números de ponto flutuante.
 * **clean_column_name(col_name: str) -> str:** Normaliza os nomes das colunas do DataFrame, removendo caracteres especiais e formatando para snake_case.
 * **scrape_company_data(ticker: str) -> dict:** Realiza o scraping dos dados de uma única empresa dado seu ticker.
 * **get_all_tickers() -> list:** Extrai a lista de todos os tickers disponíveis no Fundamentus.
@@ -107,19 +107,6 @@ Felipe Avila
 [linkedin.com](https://linkedin.com/in/avilafelipe) 
 
 
-## 📜 Licença
-Este projeto está licenciado sob a licença MIT. 
-Veja o arquivo LICENSE para mais detalhes.
-[opensource.org](https://opensource.org/license/mit)
-
-Este código é um projeto de estudo pessoal, portanto não se baseie unicamente nele para tomada de decisões de investimentos. Retornos passados não são garantia de retornos futuros. 
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
 ## ⚠️ Aviso Legal e Disclaimer de Investimento
 
 Este código foi desenvolvido para fins **educacionais e informativos** como parte de um projeto de estudo pessoal. Ele tem como objetivo demonstrar a coleta e organização de dados fundamentalistas.
@@ -131,3 +118,16 @@ Este código foi desenvolvido para fins **educacionais e informativos** como par
 *   Qualquer decisão de investimento é de sua **inteira responsabilidade**.
 
 Recomenda-se **sempre consultar um profissional financeiro qualificado** antes de tomar qualquer decisão de investimento. O desenvolvedor deste código não se responsabiliza por quaisquer perdas ou prejuízos decorrentes do uso ou interpretação das informações aqui contidas.
+
+
+## 📜 Licença
+Este projeto está licenciado sob a licença MIT. 
+Veja o arquivo LICENSE para mais detalhes.
+[opensource.org](https://opensource.org/license/mit)
+
+Este código é um projeto de estudo pessoal, portanto não se baseie unicamente nele para tomada de decisões de investimentos. Retornos passados não são garantia de retornos futuros. 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
