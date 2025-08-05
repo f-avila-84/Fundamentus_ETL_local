@@ -45,8 +45,7 @@ Certifique-se de ter o [Python](https://www.python.org/downloads/) instalado em 
     git clone https://github.com/f-avila-84/Fundamentus_ETL_local.git
     cd NomeDoSeuRepositorio
     ```
-    (Lembre-se de substituir `SeuUsuario/NomeDoSeuRepositorio` pelo caminho real do seu repositório).
-
+    
 2.  **Crie e Ative um Ambiente Virtual (Opcional, mas recomendado):**
     ```bash
     python -m venv venv
