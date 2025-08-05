@@ -4,11 +4,13 @@
 ![Libraries](https://img.shields.io/badge/Libraries-requests%2C%20beautifulsoup4%2C%20pandas-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+
 ## 📊 Visão Geral do Projeto
 
 Este repositório contém um script em Python projetado para coletar (scraper) dados fundamentalistas de empresas listadas na bolsa brasileira, utilizando como fonte o site [Fundamentus](http://www.fundamentus.com.br/). O objetivo é fornecer uma ferramenta eficiente para extrair informações financeiras e indicadores de mercado de forma automatizada, processá-las e salvá-las em um formato estruturado (CSV) para análises posteriores.
 
 Se você é um investidor, analista de dados ou simplesmente busca dados organizados para estudar o mercado financeiro brasileiro, este script pode ser um excelente ponto de partida!
+
 
 ## ✨ Funcionalidades Principais
 
@@ -18,6 +20,7 @@ Se você é um investidor, analista de dados ou simplesmente busca dados organiz
 *   **Exportação em CSV:** Os dados coletados e transformados são salvos automaticamente em um arquivo CSV, com um nome dinâmico que inclui a data e hora da execução, garantindo a organização das coletas.
 *   **Logging Detalhado:** Implementação de logs que informam o progresso da coleta, avisos e erros, proporcionando transparência e auxiliando na depuração.
 *   **Estrutura Modular:** O código é organizado em funções bem definidas, facilitando a compreensão, manutenção e possíveis extensões.
+
 
 ## 🤖 Como Funciona (para não programadores)
 
@@ -31,6 +34,7 @@ Este script atua como um "robô" na internet, seguindo estes passos simples:
 6.  **Salva em um Arquivo:** Por fim, ele salva tudo em um arquivo do tipo `CSV` (como uma planilha), dentro de uma pasta chamada `data`. O nome do arquivo terá a data e hora que você o executou, como `carga_fundamentus_20240428_103000.csv`.
 
 Pronto! Com esse arquivo CSV, você pode abrir no Excel, Google Sheets ou qualquer ferramenta de análise de dados para visualizar e trabalhar com as informações das empresas.
+
 
 ## ⚙️ Configuração e Uso (para programadores)
 
@@ -74,12 +78,13 @@ O script criará uma pasta data/ no mesmo diretório e salvará o arquivo CSV l�
 ## 👨‍💻 Estrutura do Código
 O código é dividido em funções lógicas para facilitar a compreensão:
 
-* normalize_string_for_comparison(s: str) -> str: Função utilitária para limpar e padronizar strings, removendo acentos, caracteres especiais e espaços extras.
-* clean_and_convert_value(value_str): Converte strings de valores monetários ou percentuais para números de ponto flutuante.
-* clean_column_name(col_name: str) -> str: Normaliza os nomes das colunas do DataFrame, removendo caracteres especiais e formatando para snake_case.
-* scrape_company_data(ticker: str) -> dict: Realiza o scraping dos dados de uma única empresa dado seu ticker.
-* get_all_tickers() -> list: Extrai a lista de todos os tickers disponíveis no Fundamentus.
-* etl_fundamentus_data(): A função principal que orquestra todo o processo de Extração (E), Transformação (T) e salvamento dos dados para uso local.
+* **normalize_string_for_comparison(s: str) -> str:** Função utilitária para limpar e padronizar strings, removendo acentos, caracteres especiais e espaços extras.
+* **clean_and_convert_value(value_str):** Converte strings de valores monetários ou percentuais para números de ponto flutuante.
+* **clean_column_name(col_name: str) -> str:** Normaliza os nomes das colunas do DataFrame, removendo caracteres especiais e formatando para snake_case.
+* **scrape_company_data(ticker: str) -> dict:** Realiza o scraping dos dados de uma única empresa dado seu ticker.
+* **get_all_tickers() -> list:** Extrai a lista de todos os tickers disponíveis no Fundamentus.
+* **etl_fundamentus_data():** A função principal que orquestra todo o processo de Extração (E), Transformação (T) e salvamento dos dados para uso local.
+
 
 ## 📄 Exemplo de Saída (CSV)
 Após a execução, um arquivo CSV será gerado na pasta data/ com uma estrutura similar a esta:
@@ -95,32 +100,34 @@ Este é um projeto desenvolvido para fins de estudo e portfólio. No momento, n�
 
 ## 📧 Contato
 
-Felipe Avila
+Felipe Avila 
 
-[github.com](https://github.com/f-avila-84)
+[github.com](https://github.com/f-avila-84) 
 
-[linkedin.com](https://linkedin.com/in/avilafelipe)
+[linkedin.com](https://linkedin.com/in/avilafelipe) 
+
 
 ## 📜 Licença
 Este projeto está licenciado sob a licença MIT. 
 Veja o arquivo LICENSE para mais detalhes.
 [opensource.org](https://opensource.org/license/mit)
 
+Este código é um projeto de estudo pessoal, portanto não se baseie unicamente nele para tomada de decisões de investimentos. Retornos passados não são garantia de retornos futuros. 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+
+## ⚠️ Aviso Legal e Disclaimer de Investimento
+
+Este código foi desenvolvido para fins **educacionais e informativos** como parte de um projeto de estudo pessoal. Ele tem como objetivo demonstrar a coleta e organização de dados fundamentalistas.
+
+É fundamental entender que as informações obtidas através deste script **NÃO constituem aconselhamento financeiro, recomendação de investimento ou endosso de qualquer tipo de estratégia de investimento.** O mercado financeiro é complexo e investimentos envolvem riscos, incluindo a **possibilidade de perda de capital.**
+
+*   **Não se baseie unicamente** nos dados gerados por este código para tomar decisões de investimento.
+*   **Retornos passados não são garantia** de retornos futuros.
+*   Qualquer decisão de investimento é de sua **inteira responsabilidade**.
+
+Recomenda-se **sempre consultar um profissional financeiro qualificado** antes de tomar qualquer decisão de investimento. O desenvolvedor deste código não se responsabiliza por quaisquer perdas ou prejuízos decorrentes do uso ou interpretação das informações aqui contidas.
