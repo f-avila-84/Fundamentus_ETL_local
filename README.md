@@ -98,9 +98,9 @@ VALE3,2024-04-28,10:30:00,ON,VALE ON NM,Mineração,Minerais Metálicos,2024-04-
 Este é um projeto desenvolvido para fins de estudo e portfólio. No momento, não estou buscando contribuições externas. No entanto, sinta-se à vontade para fazer um fork, explorar e adaptar o código para suas necessidades!
 
 
-## 📧 Contato
+## 📧 Autor / Contato
 
-Felipe Avila 
+Desenvolvido por **Felipe Avila**.
 
 [github.com](https://github.com/f-avila-84) 
 
