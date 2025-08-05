@@ -96,7 +96,9 @@ Este é um projeto desenvolvido para fins de estudo e portfólio. No momento, n�
 ## 📧 Contato
 
 Felipe Avila
+
 [github.com](https://github.com/f-avila-84)
+
 [linkedin.com](https://linkedin.com/in/avilafelipe)
 
 ## 📜 Licença
