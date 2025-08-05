@@ -1,4 +1,4 @@
-# 📈 Scraper de Dados Fundamentalistas do Fundamentus
+# 📈 Scraper de Dados Fundamentalistas do site Fundamentus
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
 ![Libraries](https://img.shields.io/badge/Libraries-requests%2C%20beautifulsoup4%2C%20pandas-brightgreen.svg)
@@ -19,7 +19,7 @@ Se você é um investidor, analista de dados ou simplesmente busca dados organiz
 *   **Logging Detalhado:** Implementação de logs que informam o progresso da coleta, avisos e erros, proporcionando transparência e auxiliando na depuração.
 *   **Estrutura Modular:** O código é organizado em funções bem definidas, facilitando a compreensão, manutenção e possíveis extensões.
 
-## �� Como Funciona (para não programadores)
+## 🤖 Como Funciona (para não programadores)
 
 Este script atua como um "robô" na internet, seguindo estes passos simples:
 
@@ -42,7 +42,7 @@ Certifique-se de ter o [Python](https://www.python.org/downloads/) instalado em 
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone https://github.com/SeuUsuario/NomeDoSeuRepositorio.git
+    git clone https://github.com/f-avila-84/Fundamentus_ETL_local.git
     cd NomeDoSeuRepositorio
     ```
     (Lembre-se de substituir `SeuUsuario/NomeDoSeuRepositorio` pelo caminho real do seu repositório).
@@ -68,3 +68,17 @@ Para executar o script, basta rodar o arquivo Python a partir do seu terminal:
 
 ```bash
 python seu_script_aqui.py
+
+O script criará uma pasta data/ no mesmo diretório e salvará o arquivo CSV lá.
+
+
+## 👨‍💻 Estrutura do Código
+O código é dividido em funções lógicas para facilitar a compreensão:
+
+normalize_string_for_comparison(s: str) -> str: Função utilitária para limpar e padronizar strings, removendo acentos, caracteres especiais e espaços extras.
+clean_and_convert_value(value_str): Converte strings de valores monetários ou percentuais para números de ponto flutuante.
+clean_column_name(col_name: str) -> str: Normaliza os nomes das colunas do DataFrame, removendo caracteres especiais e formatando para snake_case.
+scrape_company_data(ticker: str) -> dict: Realiza o scraping dos dados de uma única empresa dado seu ticker.
+get_all_tickers() -> list: Extrai a lista de todos os tickers disponíveis no Fundamentus.
+etl_fundamentus_data(): A função principal que orquestra todo o processo de Extração (E), Transformação (T) e salvamento dos dados para uso local.
+
