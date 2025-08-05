@@ -102,8 +102,9 @@ Felipe Avila
 [linkedin.com](https://linkedin.com/in/avilafelipe)
 
 ## 📜 Licença
-Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-opensource.org
+Este projeto está licenciado sob a licença MIT. 
+Veja o arquivo LICENSE para mais detalhes.
+[opensource.org](https://opensource.org/license/mit)
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
